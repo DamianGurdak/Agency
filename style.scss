@@ -144,7 +144,7 @@ section {
   max-width: 70%; //maybe optional
 }
 
-.page-title {
+.splash .page-title {
   margin: 0;
   font-size: 72px;
   word-spacing: -24px;
@@ -152,7 +152,7 @@ section {
   line-height: 1.2;
 }
 
-.page-subtitle {
+.splash .page-subtitle {
   margin: 24px 0;
   font-weight: 400;
   font-size: 16px;
@@ -199,6 +199,10 @@ section .page-subtitle {
 .child-element {
   flex: 0 0 33.333%;
   position: relative;
+  //testing
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .service-number {
@@ -223,7 +227,7 @@ section .page-subtitle {
 }
 
 .child-element p:last-of-type {
-  padding: 0 30px 0 0;
+  padding: 0 30px 30px 0;
 }
 
 
@@ -233,6 +237,8 @@ section .page-subtitle {
   border-color: $color-two;
   color: $color-two;
   background-image: linear-gradient(90deg, $color-two 50%, transparent 50%);
+  margin-left: 0;
+  margin-top: auto;
 }
 
 .btn-two:hover {
@@ -244,6 +250,8 @@ section .page-subtitle {
   border-color: $color-three;
   color: $color-three;
   background-image: linear-gradient(90deg, $color-three 50%, transparent 50%);
+  margin-left: 0;
+  margin-top: auto;
 }
 
 .btn-three:hover {
@@ -255,6 +263,8 @@ section .page-subtitle {
   border-color: $color-one;
   color: $color-one;
   background-image: linear-gradient(90deg, $color-one 50%, transparent 50%);
+  margin-left: 0;
+  margin-top: auto;
 }
 
 .btn-four:hover {
