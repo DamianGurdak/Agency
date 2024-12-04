@@ -12,6 +12,12 @@ $transition: all 1s;
 
 /* Global */
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 *,
 *::before,
 *::after {
@@ -24,6 +30,7 @@ body {
   line-height: 1.7;
   font-family: $font-text;
   color: $text-color-two;
+  // background-color: #ff5252;
 }
 
 .container {
@@ -40,33 +47,23 @@ section {
   display: inline-block;
   min-width: 160px;
   margin: 24px auto 0 auto;
-padding: 16px;
-border-radius: 5px;
-font-family: $font-text;
-font-size: 16px;
-text-align: center;
-text-decoration: none;
-cursor: pointer;
-border-width: 2px;
-border-style: solid;
-background-position: 100% 0;
-background-size: 300%;
-transition: $transition;
+  padding: 16px;
+  border-radius: 5px;
+  font-family: $font-text;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  background-position: 100% 0;
+  background-size: 300%;
+  transition: $transition;
 }
 
 .btn:hover {
   background-position: 0 100%;
   color: $text-color-one;
-}
-
-.btn-one {
-  border-color: $text-color-one;
-  color: $text-color-one;
-  background-image: linear-gradient(90deg, $text-color-one 50%, transparent 50%);
-}
-
-.btn-one:hover {
-  color: $color-one;
 }
 
 /* Navigation */
@@ -165,4 +162,101 @@ transition: $transition;
   font-family: $font-headr;
 }
 
+.btn-one {
+  border-color: $text-color-one;
+  color: $text-color-one;
+  background-image: linear-gradient(
+    90deg,
+    $text-color-one 50%,
+    transparent 50%
+  );
+}
 
+.btn-one:hover {
+  color: $color-one;
+}
+
+/*  Our services */
+
+section .page-title {
+  font-size: 48px;
+  margin: 0 0 72px 0;
+}
+
+section .page-subtitle {
+  font-size: 24px;
+  margin: 0 0 12px 0;
+}
+
+// parent
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  // position: relative;
+}
+
+.child-element {
+  flex: 0 0 33.333%;
+  position: relative;
+}
+
+.service-number {
+  position: absolute;
+  font-size: 144px;
+  line-height: 1;
+  color: $color-two;
+  opacity: 0.2;
+  top: -20px;  
+  // left: 0px;
+  font-family: $font-headr;
+}
+
+.child-element .page-subtitle {
+  font-size: 24px; 
+  margin: 0 0 12px 0;
+  font-weight: bold;
+}
+
+.child-element p:first-of-type {
+  font-weight: bold;
+}
+
+.child-element p:last-of-type {
+  padding: 0 30px 0 0;
+}
+
+
+
+//button two
+.btn-two {
+  border-color: $color-two;
+  color: $color-two;
+  background-image: linear-gradient(90deg, $color-two 50%, transparent 50%);
+}
+
+.btn-two:hover {
+  color: $text-color-one;
+}
+
+// button three
+.btn-three {
+  border-color: $color-three;
+  color: $color-three;
+  background-image: linear-gradient(90deg, $color-three 50%, transparent 50%);
+}
+
+.btn-three:hover {
+  color: $text-color-one;
+}
+
+// button four
+.btn-four {
+  border-color: $color-one;
+  color: $color-one;
+  background-image: linear-gradient(90deg, $color-one 50%, transparent 50%);
+}
+
+.btn-four:hover {
+  color: $text-color-one;
+}
