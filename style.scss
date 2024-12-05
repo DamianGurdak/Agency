@@ -300,24 +300,23 @@ section .page-subtitle {
 }
 
 .work-image::after {
-  content: ""; 
-  position: absolute; 
+  content: '';
+  position: absolute;
   opacity: 0.3;
   background-color: $color-two;
   top: 20px;
-  left: 20px;  
+  left: 20px;
   width: 100%;
-  height: 100%; 
+  height: 100%;
   transition: all 1s ease;
 }
 
 .work-image:hover::after {
   top: 0;
-  left: 0; 
-  width: 100%; 
-  height: 100%; 
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Zmiana koloru na ciemniejszy */
-  
 }
 
 .work-description {
@@ -342,4 +341,77 @@ section .page-subtitle {
 
 .btn-five:hover {
   color: $color-two;
+}
+
+/*  Contact us */
+
+.contact-us {
+  background-color: $color-one;
+  color: $text-color-one;
+}
+
+//parent
+.form-container {
+  display: flex;
+}
+
+//child
+.contact-form {
+  flex: 2 0 0;
+  display: flex;
+  flex-direction: column;
+  padding-right: 96px;
+  // gap: 10px;
+}
+
+//child
+.contact-info {
+  flex: 1 0 0;
+}
+
+// input {
+  
+// }
+
+input::placeholder,
+textarea::placeholder {
+  background-color: $color-one;
+  border: none;
+  color: $text-color-one;
+  padding: 0 0 0 10px;
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+  border-bottom: 5px solid white;
+  margin-bottom: 20px;
+  
+  
+}
+
+textarea {
+  background-color: $color-one;
+  color: $text-color-one;
+  padding-bottom: 80px;
+}
+
+.info title {
+  font-size: 20px;
+}
+
+.btn-six {
+  background: none;
+  border-color: $text-color-one;
+  color: $text-color-one;
+  background-image: linear-gradient(
+    90deg,
+    $text-color-one 50%,
+    transparent 50%
+  );
+}
+
+.btn-six:hover {
+  color: $color-one;
 }
