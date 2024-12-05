@@ -339,52 +339,47 @@ section .page-subtitle {
   color: $text-color-one;
 }
 
+.info title {
+  font-size: 20px;
+}
+
 //child
 .contact-form {
   flex: 2 0 0;
+  padding: 40px 96px 0 0;
   display: flex;
   flex-direction: column;
-  padding-right: 96px;
-  // gap: 10px;
 }
+
+label {
+  font-size: 0;
+}
+
+.contact-form input {
+  border: none;
+  background-color: transparent;
+  padding-bottom: 40px;
+}
+
+.contact-form input::placeholder {
+  color: $text-color-one;
+  border-bottom: 5px solid white;
+  padding: 0 0 10px 10px;
+}
+
+// .contact-form input:last-of-type::placeholder {
+//   // padding-bottom: 120px;
+//   // margin-top: 40px;
+
+// }
 
 //child
 .contact-info {
   flex: 1 0 0;
 }
 
-// input {
-
-// }
-
-input::placeholder,
-textarea::placeholder {
-  background-color: $color-one;
-  border: none;
-  color: $text-color-one;
-  padding: 0 0 0 10px;
-}
-
-input,
-textarea {
-  border: none;
-  outline: none;
-  border-bottom: 5px solid white;
-  margin-bottom: 20px;
-}
-
-textarea {
-  background-color: $color-one;
-  color: $text-color-one;
-  padding-bottom: 80px;
-}
-
-.info title {
-  font-size: 20px;
-}
-
 .btn-six {
-  background: none;
+  background: transparent;
   border-color: $text-color-one;
   color: $text-color-one;
   background-image: linear-gradient(
@@ -392,10 +387,18 @@ textarea {
     $text-color-one 50%,
     transparent 50%
   );
+  background-size: 300%; /* Aby gradient działał poprawnie */
+  background-position: 100% 0; /* Dostosowanie gradientu */
+  margin-left: 0;
+  margin-top: auto;
 }
 
 .btn-six:hover {
   color: $color-one;
+}
+
+.contact-info p {
+  padding-bottom: 20px;
 }
 
 /*  Footer */
@@ -471,7 +474,19 @@ textarea {
   section {
     padding: 20px;
   }
+
+  /*  Contact us */
+
+.contact-form{
+  padding: 0;
 }
+
+.contact-info {
+  margin-top: 60px;
+}
+}
+
+
 
 @media (min-width: 768px) and (max-width: 991px) {
 }
