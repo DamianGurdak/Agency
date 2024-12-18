@@ -451,6 +451,11 @@ label {
     flex-direction: column;
   }
 
+  /* Navigation */
+  .navigation li {
+    margin-right: 15px;
+  }
+
   /* Splash */
   .splash-inner {
     margin: 60px 0 60px 20px;
@@ -480,7 +485,6 @@ label {
     height: 150px;
   }
 
-
   .work-description {
     padding: 30px 0;
   }
@@ -502,5 +506,23 @@ label {
 
 //tablet
 @media (min-width: 768px) and (max-width: 991px) {
+  /* Global */
+  section {
+    padding: 40px 20px;
+  }
 
+  /* Our work */
+  .work-image {
+    max-width: 200px;
+    height: 80%;
+  }
+
+  .work-description {
+    padding-right: 10px;
+    padding-top: 20px;
+  }
+
+  .btn-five {
+    margin-top: 15px;
+  }
 }
